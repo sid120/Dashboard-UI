@@ -1,105 +1,173 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-        <script src="./assets/js/main.js" defer></script>
-    <link rel="stylesheet" href="./assets/css/style.css">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Project</title>
 
-</head>
-<body>
-  <!-- --------------------------------------------NavBar--------------------------------------------- -->
-    
-  <nav class="sidebar locked">
-    <div class="logo_items flex">
-      <span class="nav_image">
-        <img src="./assets/img/logojpge.avif" alt="logo_img" />
-      </span>
-      <span class="logo_name">Project</span>
-      <i class="bx bx-lock-alt" id="lock-icon" title="Unlock Sidebar"></i>
-      <i class="bx bx-x" id="sidebar-close"></i>
-    </div>
-    <div class="menu_container">
-      <div class="menu_items">
-        <ul class="menu_item">
-          <div class="menu_title flex">
-            <span class="title">Dashboard</span>
-            <span class="line"></span>
-          </div>
-          <li class="item">
-            <a href="#" class="link flex">
-              <i class="bx bx-home-alt"></i>
-              <span>Overview</span>
-            </a>
-          </li>
-          <li class="item">
-            <a href="#" class="link flex">
-              <i class="bx bx-grid-alt"></i>
-              <span>All Projects</span>
-            </a>
-          </li>
-        </ul>
-        
-        <ul class="menu_item">
-          <div class="menu_title flex">
-            <span class="title">Setting</span>
-            <span class="line"></span>
-          </div>
-          
-          <li class="item">
-            <a href="#" class="link flex">
-              <i class="bx bx-cog"></i>
-              <span>Setting</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="sidebar_profile flex">
-        <span class="nav_image">
-          <img src="./assets/img/face.avif" alt="logo_img" />
-        </span>
-        <div class="data_text">
-          <span class="name">David Oliva</span>
-          <span class="email">david@gmail.com</span>
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+  </head>
+  <body>
+    <div class="grid-container">
+
+      <!-- Header -->
+      <header class="header">
+        <div class="header__container">
+            <img src="./assets/img/face.avif" alt="" class="header__img">
+
+            <a href="#" class="header__logo">Project</a>
+
+           
+
+            <div class="header__toggle">
+                <i class='bx bx-menu' id="header-toggle"></i>
+            </div>
         </div>
-      </div>
+    </header>
+
+      <!-- End Header -->
+
+      <!-- Sidebar -->
+      <div class="nav" id="navbar">
+        <nav class="nav__container">
+            <div>
+                <a href="#" class="nav__link nav__logo">
+                    <i class='bx bxs-disc nav__icon' ></i>
+                    <span class="nav__logo-name">Project</span>
+                </a>
+
+                <div class="nav__list">
+                    <div class="nav__items">
+                        <h3 class="nav__subtitle">Profile</h3>
+
+                        <a href="#" class="nav__link active">
+                            <i class='bx bx-home nav__icon' ></i>
+                            <span class="nav__name">Home</span>
+                        </a>
+                        
+                        <div class="nav__dropdown">
+                            <a href="#" class="nav__link">
+                                <i class='bx bx-user nav__icon' ></i>
+                                <span class="nav__name">Profile</span>
+                                <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                            </a>
+
+                            <div class="nav__dropdown-collapse">
+                                <div class="nav__dropdown-content">
+                                    <a href="#" class="nav__dropdown-item">Passwords</a>
+                                    <a href="#" class="nav__dropdown-item">Mail</a>
+                                    <a href="#" class="nav__dropdown-item">Accounts</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#" class="nav__link">
+                            <i class='bx bx-message-rounded nav__icon' ></i>
+                            <span class="nav__name">Messages</span>
+                        </a>
+                    </div>
+
+                    
+                </div>
+            </div>
+
+            <a href="#" class="nav__link nav__logout">
+                <i class='bx bx-log-out nav__icon' ></i>
+                <span class="nav__name">Log Out</span>
+            </a>
+        </nav>
     </div>
-  </nav>
-   <!-- Hamburger Icon Navbar -->
-   <nav class="navbar flex">
-    <i class="bx bx-menu" id="sidebar-open"></i>
-  </nav>
+      <!-- End Sidebar -->
 
-  <!-- Main Page  -->
-  <div class="profile-card">
-    <img src="./assets/img/face.avif" alt="Profile Picture">
-    <div class="text">
-      <h1>David Oliva</h1>
-      <p>Web Developer</p>
+      <!-- Main -->
+      <main class="main-container">
+       
+
+        <div class="main-cards">
+
+          <div class="card">
+            <div class="card-inner">
+              <h3>Goal Achieved </h3>
+              <span class="material-icons-outlined">inventory_2</span>
+            </div>
+            <h1>249</h1>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <h3>My Goal</h3>
+              <span class="material-icons-outlined">category</span>
+            </div>
+            <h1>25</h1>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <h3>Customers</h3>
+              <span class="material-icons-outlined">groups</span>
+            </div>
+            <h1>1500</h1>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <h3>Montly Income</h3>
+              <span class="material-icons-outlined">notification_important</span>
+            </div>
+            <h1>$5600</h1>
+          </div>
+
+        </div>
+
+        <div class="charts">
+
+          <div class="charts-card">
+            <h2 class="chart-title">Purchase and Sales Orders</h2>
+            <div id="area-chart"></div>
+          </div>
+
+          <div class="charts-card">
+            <div class="profile-card">
+              <img src="./assets/img/face.avif" alt="Profile Picture">
+              <div class="text">
+                <h1>David Oliva</h1>
+                <p>Web Developer</p>
+              </div>
+              <div class="extra-info">
+                <p><strong>Today:</strong> $19,000</p>
+                <p><strong>Account Balance:</strong> $4,000</p>
+                <p><strong>Year to Date:</strong> $1,800</p>
+            </div>
+            <button class="total-interest-btn">Total Interest</button>
+            
+            <div class="extra-info">
+              <p><strong>Recent Transaction :</strong>  2023/07/20</p>
+              <p><strong>Withdrawal Transfer-</strong> 2023/07/20</p>
+              <p><strong>Bank -XXX11</strong> 2023/07/20</p>
+              
+            </div>
+            </div>
+          </div>
+
+        </div>
+      </main>
+      <!-- End Main -->
+
     </div>
-    <div class="extra-info">
-      <p><strong>Today:</strong> $19,000</p>
-      <p><strong>Account Balance:</strong> $4,000</p>
-      <p><strong>Year to Date:</strong> $1,800</p>
-  </div>
-  <button class="total-interest-btn">Total Interest</button>
-  <div class="social-icons">
-      <a href="#"><i class="fa fa-facebook"></i></a>
-      <a href="#"><i class="fa fa-twitter"></i></a>
-      <a href="#"><i class="fa fa-linkedin"></i></a>
-  </div>
-  <div class="extra-info">
-    <p><strong>Recent Transaction :</strong>  2023/07/20</p>
-    <p><strong>Withdrawal Transfer-</strong> 2023/07/20</p>
-    <p><strong>Bank -XXX11</strong> 2023/07/20</p>
-    
-  </div>
-  </div>
 
-  <!-- Center Page  -->
-  
-  
-
-</body>
+    <!-- Scripts -->
+    <!-- ApexCharts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.5/apexcharts.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./assets/js/main.js"></script>
+  </body>
 </html>
